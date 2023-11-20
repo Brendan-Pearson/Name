@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 3626502147
+    locked: 0
+  - name: Objects
+    uniqueID: 3597812635
+    locked: 0
+  - name: Player
+    uniqueID: 2839838861
+    locked: 0
+  - name: gun
+    uniqueID: 2520843297
+    locked: 0
+  - name: Player arm
+    uniqueID: 1698396441
+    locked: 0
