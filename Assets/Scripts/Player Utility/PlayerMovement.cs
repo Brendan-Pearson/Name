@@ -10,9 +10,11 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 forceToApply;
     public Vector2 PlayerInput;
     public float forceDamping;
+    public Camera cam;
     void Update()
     {
         PlayerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        cam.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 10);
     }
     void FixedUpdate()
     {
