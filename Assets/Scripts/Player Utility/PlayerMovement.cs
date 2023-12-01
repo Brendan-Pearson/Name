@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	//I recommend 7 for the move speed, and 1.2 for the force damping
+	// I recommend 7 for the move speed, and 1.2 for the force damping
     public Rigidbody2D rb;
     public float moveSpeed;
     public Vector2 forceToApply;
