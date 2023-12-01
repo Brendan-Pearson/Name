@@ -33,10 +33,10 @@ public class Gun : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown && Time.time >= nextTimeToFire) //if player is pressing shoot button and delay between shots is over
+       if (Input.GetMouseButtonDown && Time.time >= nextTimeToFire) //if player is pressing shoot button and delay between shots is over
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
+           nextTimeToFire = Time.time + 1f / fireRate;
+           Shoot();
         }
     }
 
@@ -47,12 +47,12 @@ public class Gun : MonoBehaviour
         // Play gunshot sound
         gunshotSound.Play();
 
-        private void OnTriggerEnter(Collider other) //uses colliders to detect bullets
+        void OnTriggerEnter(Collider other) //uses colliders to detect bullets
         {
             Health targetHealth = other.GetComponent<Health>();
             if (targetHealth != null)
             {
-                // Deal damage to the enemy
+               // Deal damage to the enemy
                 targetHealth.TakeDamage(damage);
             }
         }
